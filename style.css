@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #000;
+    color:#D6EFFF;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.nav-bar {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-element {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    transition: 0.4s;
+}
+.nav-element a{
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    
+}
+.nav-element a:hover{
+    color:#E0D6F2;
+    background-color: #A89CC9;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5rem;
+    text-align: center;
+}
+
+.home-content {
+    flex:1 ;
+    max-width: 50%;
+    padding: 1rem;
+}
+.home-content .home-hello{
+    color: #FFBD39;
+    font-size: 1.2rem;
+}
+.home-content h1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+.fname{
+    color: #FFBD39;
+    background-color: #000;
+}
+
+.home-head{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.social{
+    margin-right: 1rem;
+}
+
+.social i {
+    font-size: 2rem;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.social i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.home-img {
+    flex: 1;
+    max-width: 40%;
+    padding: 1rem;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    transition: 0.2s;
+}
+.home-img img:hover{
+    box-shadow: 0px 0px 50px #FFBD39;
+}
+
+.about {
+    padding-top: 5rem;
+    text-align: center;
+    min-height: 100vh;
+}
+.about h2{
+    font-family: tahoma;
+    color: green;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.about .bref{
+    margin: 0 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.Education,  .skills, .project, .contact-section{
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+h2{
+    font-family: tahoma;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+    font-size: 2.5rem;
+}
+.cards-container{
+    display: flex;
+}
+.card{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 1rem auto;
+    border: solid darkgoldenrod;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); 
+    background-color: #121212;
+    margin-top: 2rem;
+    padding: 1rem;
+    
+}
+ span{
+    background-color: #121212;
+    color: lightgreen;
+}
+.card h3{
+    color: #FFBD39;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); 
+}
+.card h3, .card p {
+    background-color: transparent; 
+    margin: 0.5rem 0;
+}
+.Education .course{
+    font-size: 2rem
+}
+.hori-line{
+    margin: 0 auto;
+    width: 90%;
+    opacity: 0.2;
+}
+
+
+.skills h2{
+    font-size: 2rem;
+}
+.brand{
+    color: #FFBD39;
+
+}
+
+
+
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.project-card {
+    width: 400px;
+    margin: 3rem auto;
+    text-align: center; 
+    margin: 1rem;
+}
+.project-card img {
+    width: 100%; 
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+.project-card img:hover{
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.8em; 
+    margin: 15px 0 10px;   
+}
+
+.project-card p {
+    font-size: 1em; 
+    opacity: 0.6;
+    margin: 0 15px 15px;
+}
+
+#contact-card{
+    max-width: 100%;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .nav-bar{
+        padding: 1rem 2rem;
+    }
+    .name{
+        font-size: 1rem;
+    }
+    .nav-element{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .home {
+        margin-top: 4rem;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    .home-img {
+        max-width: 80%;
+    }
+    .about{
+        padding: 2rem;
+    }
+
+    .Education h2{
+        font-size: 2rem;
+    }
+    .about .bref {
+        font-size: 1.2rem
+    }
+    .cards-container{
+        display: inline;
+    }
+    .card{
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+}
