@@ -133,7 +133,7 @@ body{
 }
 
 .about .bref{
-    margin: 0 0.5rem;
+    margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 1rem 2rem;
     font-size: 2rem;
