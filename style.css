@@ -4,12 +4,14 @@
     box-sizing: border-box;
     text-decoration: none;
     background-color: #000;
-    color:#D6EFFF;
+    color: #D6EFFF;
 }
-body{
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.main{
+
+.main {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -45,14 +47,16 @@ body{
     margin-left: 2rem;
     transition: 0.4s;
 }
-.nav-element a{
+
+.nav-element a {
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     transition: 0.3s;
-    
+
 }
-.nav-element a:hover{
-    color:#E0D6F2;
+
+.nav-element a:hover {
+    color: #E0D6F2;
     background-color: #A89CC9;
 }
 
@@ -60,36 +64,39 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 5rem;
     text-align: center;
 }
 
 .home-content {
-    flex:1 ;
+    flex: 1;
     max-width: 50%;
     padding: 1rem;
 }
-.home-content .home-hello{
+
+.home-content .home-hello {
     color: #FFBD39;
     font-size: 1.2rem;
 }
-.home-content h1{
+
+.home-content h1 {
     margin-top: 1rem;
     margin-bottom: 2rem;
     font-size: 3.5rem;
 }
-.fname{
+
+.fname {
     color: #FFBD39;
     background-color: #000;
 }
 
-.home-head{
+.home-head {
     font-size: 1.8rem;
     margin-bottom: 2rem;
 }
 
-.social{
+.social {
     margin-right: 1rem;
 }
 
@@ -116,7 +123,8 @@ body{
     border-radius: 1rem;
     transition: 0.2s;
 }
-.home-img img:hover{
+
+.home-img img:hover {
     box-shadow: 0px 0px 50px #FFBD39;
 }
 
@@ -125,14 +133,15 @@ body{
     text-align: center;
     min-height: 100vh;
 }
-.about h2{
+
+.about h2 {
     font-family: tahoma;
     color: green;
     margin-bottom: 3rem;
     font-size: 3rem;
 }
 
-.about .bref{
+.about .bref {
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 1rem 2rem;
@@ -141,100 +150,117 @@ body{
     text-align: center;
 }
 
-.Education,  .skills, .project, .contact-section{
+.Education,
+.skills,
+.project,
+.contact-section {
     text-align: center;
     padding: 2rem;
     padding-bottom: 10rem;
 }
-h2{
+
+h2 {
     font-family: tahoma;
     font-weight: bold;
     margin: 2rem 0 1rem 0;
     font-size: 2.5rem;
 }
-.cards-container{
+
+.cards-container {
     display: flex;
 }
-.card{
+
+.card {
     height: auto;
     width: 100%;
     max-width: 400px;
     text-align: center;
     margin: 1rem auto;
     border: solid darkgoldenrod;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); 
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
     background-color: #121212;
     margin-top: 2rem;
     padding: 1rem;
-    
+
 }
- span{
+
+span {
     background-color: #121212;
     color: lightgreen;
 }
-.card h3{
+
+.card h3 {
     color: #FFBD39;
 }
-.card:hover{
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); 
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 }
-.card h3, .card p {
-    background-color: transparent; 
+
+.card h3,
+.card p {
+    background-color: transparent;
     margin: 0.5rem 0;
 }
-.Education .course{
+
+.Education .course {
     font-size: 2rem
 }
-.hori-line{
+
+.hori-line {
     margin: 0 auto;
     width: 90%;
     opacity: 0.2;
 }
 
 
-.skills h2{
+.skills h2 {
     font-size: 2rem;
 }
-.brand{
+
+.brand {
     color: #FFBD39;
 
 }
 
 
 
-.projects{
+.projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
 }
+
 .project-card {
     width: 400px;
     margin: 3rem auto;
-    text-align: center; 
+    text-align: center;
     margin: 1rem;
 }
+
 .project-card img {
-    width: 100%; 
+    width: 100%;
     height: 200px;
     transition: transform 0.3s ease;
 }
-.project-card img:hover{
+
+.project-card img:hover {
     transform: scale(1.05);
 }
 
 .project-card h3 {
-    font-size: 1.8em; 
-    margin: 15px 0 10px;   
+    font-size: 1.8em;
+    margin: 15px 0 10px;
 }
 
 .project-card p {
-    font-size: 1em; 
+    font-size: 1em;
     opacity: 0.6;
     margin: 0 15px 15px;
 }
 
-#contact-card{
+#contact-card {
     max-width: 100%;
     font-size: 1rem;
     margin-bottom: 5rem;
@@ -251,16 +277,23 @@ h2{
 
 
 @media (max-width: 1000px) {
-    .nav-bar{
+    .nav-bar {
         padding: 1rem 2rem;
     }
-    .name{
+
+    .name {
         font-size: 1rem;
     }
-    .nav-element{
+
+    .fname {
+        font-size: 3rem;
+    }
+
+    .nav-element {
         font-size: 1rem;
         margin-left: 1rem;
     }
+
     .home {
         margin-top: 4rem;
         padding: 2rem;
@@ -272,23 +305,28 @@ h2{
         max-width: 100%;
         margin-bottom: 2rem;
     }
+
     .home-img {
         max-width: 80%;
     }
-    .about{
+
+    .about {
         padding: 2rem;
     }
 
-    .Education h2{
+    .Education h2 {
         font-size: 2rem;
     }
+
     .about .bref {
         font-size: 1.2rem
     }
-    .cards-container{
+
+    .cards-container {
         display: inline;
     }
-    .card{
+
+    .card {
         max-width: 100%;
         margin: 1rem 0;
     }
